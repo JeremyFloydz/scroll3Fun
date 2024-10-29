@@ -12,12 +12,19 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textSize="18sp"
-        android:text="Texto de tarea" /> <!-- Puedes agregar texto por defecto si es necesario -->
+        android:text="Texto de tarea" />
 
     <ImageView
         android:id="@+id/tick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/tick_icon"
-        android:contentDescription="Completado" />
+        android:contentDescription="Completar tarea" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/estrellavacia_24"
+        android:contentDescription="Marcar como favorita" />
 </LinearLayout>

@@ -9,10 +9,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class TareaAdapter(
+class TareaController(
     private val tareas: MutableList<Tarea>,
     private val onTickClick: (Tarea) -> Unit // Cambiamos a recibir el objeto Tarea
-) : RecyclerView.Adapter<TareaAdapter.TareaViewHolder>() {
+) : RecyclerView.Adapter<TareaController.TareaViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TareaViewHolder {
         val view = LayoutInflater.from(parent.context)

@@ -1,7 +1,6 @@
 package com.example.scroll
 
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.Button
 import android.media.MediaPlayer
 import android.widget.EditText
@@ -12,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var taskList: MutableList<Tarea>
-    private lateinit var taskAdapter: TareaAdapter
+    private lateinit var taskAdapter: TareaController
     private lateinit var inputTask: EditText
     private lateinit var addButton: Button
     private lateinit var tasksRecyclerView: RecyclerView
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         tasksRecyclerView = findViewById(R.id.recyclerViewTareas)
 
         // Configurar el adaptador
-        taskAdapter = TareaAdapter(
+        taskAdapter = TareaController(
             taskList,
             { tarea -> removeTask(tarea) } // Cambiado para recibir Tarea
         )
